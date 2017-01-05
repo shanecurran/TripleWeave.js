@@ -1,0 +1,36 @@
+<html>
+	<body>
+		<!-- <script src="../src/triplesec.min.js"></script> -->
+		<script src="../src/tripleweave.combined.min.js"></script>
+		<script>
+			var options = {
+				key_bitsize: 2048,
+				weaves: 3,
+				data: "this is the string to be TripleWeaved"
+			};
+
+			tripleweave.encrypt(options, function (encrypted) {
+				// `encrypted` is an object
+				// {
+				//		key: "YOUR_GENERATED_KEY", (this is important, save this)	
+				// 		ciphertext: "MWM5NGQ3ZGUwMDAwMDA…NmM2I2ODA0Yzg=" (your encrypted TripleWeave cipher)
+				// }
+
+				options = {
+					key: encrypted.key,
+					weaves: options.weaves,
+					ciphertext: encrypted.ciphertext
+				}
+
+				tripleweave.decrypt(options, function (data) {
+					// `data` is a string with the unwoven original data
+					// `data` should === options.data
+
+					alert(data);
+				});
+			}, function (data) {
+				// This callback is optional and is just a progress hook for encryption/decryption cycles
+			});
+		</script>
+	</body>
+</html>
