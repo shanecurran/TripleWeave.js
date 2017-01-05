@@ -1,11 +1,6 @@
 # TripleWeave.js
 A new encryption method known as _weaving_. Strings are broken up at evenly spaced intervals and encrypted seperately. Built for [qCrypt](https://getqcrypt.com/).
 
-## Install
-```bash
-npm install fhe
-```
-
 ## Information
 This library makes use of the [TripleSec.js library by Keybase.io](https://keybase.io/triplesec/).
 FYI: This library is **_slow_**. It's probably suitable for production use, but I wouldn't.
