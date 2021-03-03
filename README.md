@@ -1,3 +1,5 @@
+## NOTE: This started as a joke and wasn't intended to actually be used. Please don't use it :)
+
 # TripleWeave.js
 A new encryption method known as _weaving_. Strings are broken up at evenly spaced intervals and encrypted seperately. Built for [qCrypt](https://getqcrypt.com/).
 
