@@ -1,4 +1,6 @@
-### NOTE: This started as a joke and wasn't intended to actually be used. Please don't use it :)
+### NOTE: This started as a joke and wasn't intended to actually be used. :)
+
+It's no _less_ secure than [TripleSec](https://keybase.io/triplesec/) — in fact, it's arguably more secure by a factor of the number of weaves (in a brute-force scenario) — but it's unmaintained and isn't audited.
 
 # TripleWeave.js
 A new encryption method known as _weaving_. Strings are broken up at evenly spaced intervals and encrypted seperately. Built for [qCrypt](https://getqcrypt.com/).
